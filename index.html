@@ -1,13 +1,15 @@
 <html lang="en">
 <body>
   <script>
+    alert(document.domain)
+  </script>
+<!--  <script>
     onload = function() {
         console.log(frames[0].document);
         // Error: Permission denied to access property "document"
       }
-    alert(parent.document.domain)
   </script>
-<!--   <script>
+   <script>
     var isInIframe = (parent !== window),
         parentUrl = null;
     if (isInIframe) {
