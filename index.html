@@ -2,7 +2,12 @@
 <body>
   <script>
     alert(document.domain)
-    parent.postMessage('test', '*');
+    window.onload = function() {
+    var oFrame = document.getElementById("Image :: /../../../../..//testusername111222.github.io/my/index.html?/");
+    oFrame.contentWindow.document.onclick = function() {
+        alert("frame contents clicked");
+    };
+};
   </script>
 </body>
 </html>
