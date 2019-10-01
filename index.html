@@ -1,6 +1,10 @@
 <html lang="en">
 <body>
   <script>
+    onload = function() {
+        console.log(frames[0].document);
+        // Error: Permission denied to access property "document"
+      }
     alert(parent.document.domain)
   </script>
 <!--   <script>
