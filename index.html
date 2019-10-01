@@ -1,14 +1,14 @@
 <html lang="en">
 <body>
   <script>
-    alert(parent.document.domain)
+    //alert(parent.document.domain)
   </script>
   <script>
     var isInIframe = (parent !== window),
         parentUrl = null;
     if (isInIframe) {
         parentUrl = document.referrer;
-      alert(parentUrl);
+        alert(parentUrl);
     }
   </script>
 </body>
