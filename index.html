@@ -2,20 +2,7 @@
 <body>
   <script>
     alert(document.domain)
+    parent.postMessage('test', '*');
   </script>
-<!--  <script>
-    onload = function() {
-        console.log(frames[0].document);
-        // Error: Permission denied to access property "document"
-      }
-  </script>
-   <script>
-    var isInIframe = (parent !== window),
-        parentUrl = null;
-    if (isInIframe) {
-        parentUrl = document.referrer;
-        alert(parentUrl);
-    }
-  </script> -->
 </body>
 </html>
