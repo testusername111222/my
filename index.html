@@ -3,8 +3,10 @@
 <body>
   <script>
     var iframe = document.createElement("iframe");
+    iframe.id = 'custom_iframe';
     iframe.name = '\");javascript:alert();//helloworld';
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge.png'
+    iframe.onmouseover = 'alert()';
     //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
     document.body.appendChild(iframe);
 
