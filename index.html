@@ -1,35 +1,24 @@
-<html lang="en">
-        <head>
-                <meta charset="utf-8">
-  <title>intigriti DOM XSS challenge</title>
-  <style>
-    iframe{
-      position: absolute;
-      left : 0;
-      top : 0;
-      width : 100vw;
-      height : 100vh;
-    }
-  </style>
-        </head>
+<html>
+
 <body>
-    <script>
-        var iframe = document.createElement("iframe");
-        iframe.name = `helloworld`; 
-        iframe.src = `https://challenge.intigriti.io/static/4/challenge1.png?q=alert(2)`
-        //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
-        document.body.appendChild(iframe);
-    </script>
-    <script>
-//         document.getElementById('6666').style.border = '30px solid #000000';
-        
-        function codeAddress() {
-                alert(document.domain);
-//             alert(document.getElementsByTagName('iframe').length)
-//             alert(document.getElementsByTagName('iframe')[0].name)
-//             document.getElementsByName('iframe')[0].name = "newhelloworld";
-        }
-        window.onload = codeAddress;
-    </script>
+  <script>
+    var iframe = document.createElement("iframe");
+    iframe.name = 'helloworld';
+    iframe.src = 'helloworld2'
+    //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
+    document.body.appendChild(iframe);
+  </script>
+  <script>
+    document.getElementById('6666').style.border = '30px solid #000000';
+
+    function codeAddress() {
+      alert(document.domain);
+      alert(document.getElementsByTagName('iframe').length)
+      alert(document.getElementsByTagName('iframe')[0].name)
+      document.getElementsByName('iframe')[0].name = "newhelloworld";
+    }
+    window.onload = codeAddress;
+  </script>
 </body>
+
 </html>
