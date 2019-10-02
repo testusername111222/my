@@ -4,12 +4,10 @@
     alert(document.domain)
   </script> -->
     <script>
-    //(location.search == "") ? true : location = location.pathname;
-    var iframe = document.createElement("iframe");
-        //var id = location.hash.substr(1);
-        //var path = `/static/4/${id}.png`;
+        var iframe = document.createElement("iframe");
         iframe.name = `helloworld`; 
-            iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?`
+        iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?`
+        iframe.frameborder = `500`;
         //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
         //iframe.onclick = function(e){
         //  window.open(this.contentWindow.name, this.src);
