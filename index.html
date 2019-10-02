@@ -1,13 +1,19 @@
 <html lang="en">
 <body>
-  <script>
+<!--   <script>
     alert(document.domain)
-    window.onload = function() {
-    var oFrame = document.getElementById("Image :: ");
-    oFrame.contentWindow.document.onclick = function() {
-        alert("frame contents clicked");
-    };
-};
+  </script> -->
+    <script>
+    //(location.search == "") ? true : location = location.pathname;
+    var iframe = document.createElement("iframe");
+    //var id = location.hash.substr(1);
+    //var path = `/static/4/${id}.png`;
+    iframe.name = `\,);alert()`; 
+    iframe.src = `test`;
+    iframe.onclick = function(e){
+      window.open(this.contentWindow.name, this.src);
+    }
+    document.body.appendChild(iframe);
   </script>
 </body>
 </html>
