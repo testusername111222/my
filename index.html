@@ -5,14 +5,17 @@
   </script> -->
     <script>
         var iframe = document.createElement("iframe");
+        iframe.id = `6666`;
         iframe.name = `helloworld`; 
         iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?`
-        iframe.frameborder = `500`;
         //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
         //iframe.onclick = function(e){
         //  window.open(this.contentWindow.name, this.src);
         //}
         document.body.appendChild(iframe);
   </script>
+    <script>
+      document.getElementById('6666').style.border = '30px solid #000000';
+    </script>
 </body>
 </html>
