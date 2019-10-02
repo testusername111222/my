@@ -6,27 +6,9 @@
     iframe.id = 'custom_iframe';
     iframe.name = 'custom_name';
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge.png'
-    iframe.onmouseover = 'alert()';
-    //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
     document.body.appendChild(iframe);
-
-    function codeAddress() {
-      alert(document.domain);
-    }
-    window.onload = codeAddress;
   </script>
-  <!--   <script>
-    document.getElementById('6666').style.border = '30px solid #000000';
-    function codeAddress() {
-      alert(document.domain);
-      alert(document.getElementsByTagName('iframe').length)
-      alert(document.getElementsByTagName('iframe')[0].name)
-      document.getElementsByName('iframe')[0].name = "newhelloworld";
-    }
-    window.onload = codeAddress;
-  </script> -->
-  
-  <a href="https://challenge.intigriti.io/#challenge" target="javascript:alert(1)">PoC</a>
 </body>
 
 </html>
+<!-- iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`; -->
