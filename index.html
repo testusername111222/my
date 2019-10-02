@@ -1,4 +1,5 @@
 <html>
+
 <body>
   <script>
     var iframe = document.createElement("iframe");
@@ -6,8 +7,13 @@
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge.png'
     //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
     document.body.appendChild(iframe);
+
+    function codeAddress() {
+      alert(document.domain);
+    }
+    window.onload = codeAddress;
   </script>
-<!--   <script>
+  <!--   <script>
     document.getElementById('6666').style.border = '30px solid #000000';
     function codeAddress() {
       alert(document.domain);
