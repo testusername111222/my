@@ -1,11 +1,20 @@
 <html lang="en">
 <body>
-    <script>
+<!--     <script>
         var iframe = document.createElement("iframe");
 //         iframe.id = `6666`;
         iframe.name = `helloworld"onload="alert()`; 
         iframe.src = `https://challenge.intigriti.io/static/4/challenge1.png?`
         //iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`;
+        document.body.appendChild(iframe);
+    </script> -->
+    <script>
+        (location.search == "") ? true : location = location.pathname;
+        var iframe = document.createElement("iframe");
+        var id = location.hash.substr(1);
+        var path = `/testpath`;
+        iframe.name = `helloworld`; 
+        iframe.src = path;
         document.body.appendChild(iframe);
     </script>
     <script>
