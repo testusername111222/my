@@ -5,7 +5,7 @@
     var iframe = document.createElement('iframe');
     iframe.name = 'helloworld';
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge.png'
-    
+    iframe.sandbox = 'allow-scripts'
     iframe.onclick = function(e){
       window.open(this.contentWindow.name, this.src);
     }
@@ -13,7 +13,7 @@
     document.body.appendChild(iframe);
   </script>
   <script>
-//     alert(document.cookie)
+    alert(document.cookie)
     window.parent.function(e)
   </script>
 </body>
