@@ -8,7 +8,7 @@
 //     iframe.sandbox = 'allow-popups allow-forms allow-same-origin allow-scripts allow-top-navigation'
     iframe.onclick = function(e){
           var myWindow = window.open(this.contentWindow.name, this.src);
-          myWindow.opener.document.write("<script>alert(document.domain)
+          myWindow.opener.document.write('<script>alert(document.domain)\<\\script>')
     }
     document.body.appendChild(iframe);
   </script>
