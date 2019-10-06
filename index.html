@@ -11,6 +11,10 @@
         myWindow.opener.document.write('<img src=x onerror=alert(document.domain)>')
     }
     document.body.appendChild(iframe);
+
+    alert(document.domain);
+    window.history.back();
+    alert(document.domain);
   </script>
 </body>
 
