@@ -5,6 +5,8 @@
     var iframe = document.createElement('iframe');
     iframe.name = 'helloworld';
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png'
+    iframe.referrerpolicy = 'same-origin'
+    iframe.sandbox = 'allow-same-origin'
     iframe.onclick = function(e){
       window.open(this.contentWindow.name, '<img src=x enerror=alert()>');
     }
