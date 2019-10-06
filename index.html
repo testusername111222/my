@@ -5,6 +5,9 @@
     var iframe = document.createElement('iframe');
     iframe.name = 'helloworld';
     iframe.src = '<img onerror=alert(1) src=x>'
+    iframe.onclick = function(e){
+      window.open(this.contentWindow.name, this.src);
+    }
     document.body.appendChild(iframe);
   </script>
 </body>
