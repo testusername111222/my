@@ -16,5 +16,11 @@ document.getElementById('btn').onclick = function(e){
         );
     }, 2000);
 }
+var i = document.createElement("iframe");
+i.onload = function(){
+  i.contentWindow.alert(1);
+}
+document.appendChild(i);
 </script>
+    
 </html>
