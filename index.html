@@ -9,7 +9,7 @@
     document.body.appendChild(iframe);
   </script>
 
-  <script>document.write(location.href);</script>
+<script>window.open("http://victim.com/test_window.html", "<script>alert('XSS')</scr" + "ipt>", "", false);</script>
 
   </body>
 </html>
