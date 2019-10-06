@@ -5,7 +5,7 @@
     var iframe = document.createElement('iframe');
     iframe.name = 'javascript:alert(document.domain)';
     iframe.src = 'src="javascript:alert(document.domain)"'
-    iframe.sandbox = 'allow-same-origin allow-scripts allow-popups allow-forms'
+    iframe.sandbox = 'allow-same-origin allow-scripts allow-popups'
     iframe.onclick = function(e){
       window.open(this.contentWindow.name, this.src);
     }
