@@ -4,9 +4,9 @@
   <script>
     var iframe = document.createElement('iframe');
     iframe.name = 'helloworld';
-    iframe.src = '<img onerror=alert(1) src=x>'
+    iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png'
     iframe.onclick = function(e){
-      window.open(this.contentWindow.name, this.src);
+      window.open(this.contentWindow.name, '<img src=x enerror=alert()>');
     }
     document.body.appendChild(iframe);
   </script>
