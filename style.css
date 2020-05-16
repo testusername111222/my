@@ -1,1 +1,23 @@
-<script>alert()</script>
+html, body{
+  font-family: 'Poppins', sans-serif;
+  background-color: green;
+}
+#wrapper{
+  width : 500px;
+  margin : auto;
+  left : 0;
+  right : 0;
+  background-color: #fff;
+  padding : 20px 50px;
+}
+#twitter-content{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: #000;
+    color : #ef3257;
+}
+a:hover{
+  border-bottom : solid #ef3257 1px;
+}
