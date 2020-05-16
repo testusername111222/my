@@ -1,7 +1,8 @@
 html, body{
   font-family: 'Poppins', sans-serif;
   background-color: green;
-  margin-left:expression('alert(1337)')
+  xss:expression(open(alert(1)));
+  margin-left:expression('alert(1337)');
   
 }
 #wrapper{
